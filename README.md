@@ -25,7 +25,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 <img src="gifs/Flixster2.gif" width=250><br>
 ### Notes
-Had some trouble when viewing app in landscape. Initally, it would render in reverse but was able to fix issue 
+Had some trouble when viewing app in landscape. Initially, it would render in reverse but was able to fix issue 
 but not using the new windowed emulator on Android Studio.
 
 ### Open-source libraries used

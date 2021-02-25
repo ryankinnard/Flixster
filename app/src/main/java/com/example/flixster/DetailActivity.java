@@ -27,6 +27,7 @@ public class DetailActivity extends YouTubeBaseActivity {
     RatingBar ratingBar;
     TextView  tvOverview;
     YouTubePlayerView youTubePlayerView;
+    TextView releaseDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +38,16 @@ public class DetailActivity extends YouTubeBaseActivity {
         ratingBar = findViewById(R.id.ratingBar);
         tvOverview = findViewById(R.id.tvOverview);
         youTubePlayerView = findViewById(R.id.player);
+        releaseDate = findViewById(R.id.releaseDate);
+
 
         Movie movie = Parcels.unwrap(getIntent().getParcelableExtra("movie"));
         tvTitle.setText(movie.getTitle());
         ratingBar.setRating((float)movie.getRating());
         tvOverview.setText(movie.getOverview());
+        releaseDate.setText("Release Date: " + movie.getReleaseDate());
+
+
 
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(String.format(VIDEOS_URL, movie.getMovieId()), new JsonHttpResponseHandler() {

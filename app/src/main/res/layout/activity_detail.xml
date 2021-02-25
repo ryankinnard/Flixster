@@ -27,12 +27,22 @@
         android:isIndicator="true"
         android:numStars="10"
         android:progressTint="#DF1212"
-        android:rating="8.5" />
+        android:rating="8.5"
+        android:layout_marginBottom="15dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="A portal transports Lt. Artemis and an elite unit of soldiers to a strange world where powerful monsters rule with deadly ferocity. Faced with relentless danger, the team encounters a mysterious hunter who may be their only hope to find a way home"
-        android:id="@+id/tvOverview"/>
+        android:id="@+id/tvOverview"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Hello World"
+        android:id="@+id/releaseDate"
+        android:layout_marginTop="15dp"/>
 
 </LinearLayout>
